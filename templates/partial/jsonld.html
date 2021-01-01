@@ -1,7 +1,7 @@
 <script type="application/ld+json">
 {
   "@context" : "http://schema.org",
-  "@type" : "Blog",
+  "@type" : "{{ JSONLD_TYPE|default('Blog') }}",
   "name": " {{ SITENAME }} ",
   "url" : "{{ SITEURL }}",
   "image": "{{ SITELOGO }}",
