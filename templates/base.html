@@ -219,6 +219,7 @@
       </nav>
       {% endif %}
 
+      {% if SOCIAL %}
       <ul class="social">
         {% for name, link in SOCIAL %}
           <li>
@@ -228,6 +229,7 @@
           </li>
         {% endfor %}
       </ul>
+      {% endif %}
     </div>
 
     {% if GOOGLE_ADSENSE and GOOGLE_ADSENSE.ads.aside %}
